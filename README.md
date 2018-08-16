@@ -37,7 +37,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
     3 默认日志文件最大为5M
     **/ 
     countStrategy.logCount = 1000;//[KKLConfigCenterServer sharedInstance].logUploadCacheArticles;
-    fileStrategy.kLogFileSize = 5M;//[KKLConfigCenterServer sharedInstance].logCacheUploadMaxSize;
+    fileStrategy.kLogFileSize = 5*1024*1024;//5M//[KKLConfigCenterServer sharedInstance].logCacheUploadMaxSize;
     timeStrategy.logUploadInterval = 600;//[KKLConfigCenterServer sharedInstance].logUploadPeriod;
     
     [[KKLLog sharedInstance] addStrategy:ttyStrategy];
