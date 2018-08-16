@@ -22,7 +22,7 @@ pod 'KKLLumberjack'
 
 ## Author
 
- zhangli1959@kaike.la
+sheepWhite
 
 ## License
 
