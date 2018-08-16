@@ -53,9 +53,9 @@ it, simply add the following line to your Podfile:
 pod 'KKLLumberjack'
 ```
 
-## Author
+## Have a question?
 
-sheepWhite
+15850515283@163.com
 
 ## License
 
