@@ -1,0 +1,6 @@
+framework module KKLLumberjack {
+  umbrella header "KKLLumberjack-umbrella.h"
+
+  export *
+  module * { export * }
+}

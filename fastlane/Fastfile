@@ -1,0 +1,4 @@
+import_from_git(
+  url: 'ssh://git@git.mistong.com:10022/ios-framework/fastlane.git',
+  branch: 'master'
+)

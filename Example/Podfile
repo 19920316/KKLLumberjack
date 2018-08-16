@@ -1,0 +1,17 @@
+#use_frameworks!
+
+target 'KKLLumberjack_Example' do
+  pod 'KKLLumberjack', :path => '../'
+  #pod ‘KKLConfigManager’, :path => ‘../’
+
+#pod ‘KKLConfigManager’
+pod 'CocoaLumberjack', '~> 3.4.1'
+
+  target 'KKLLumberjack_Tests' do
+    inherit! :search_paths
+
+    
+
+  end
+
+end

@@ -1,0 +1,29 @@
+PODS:
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
+    - CocoaLumberjack/Default
+  - KKLLumberjack (0.3.8):
+    - CocoaLumberjack (~> 3.4.1)
+
+DEPENDENCIES:
+  - CocoaLumberjack (~> 3.4.1)
+  - KKLLumberjack (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaLumberjack
+
+EXTERNAL SOURCES:
+  KKLLumberjack:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  KKLLumberjack: f054d76bc1f3bb800018f928801c0c297fc95f58
+
+PODFILE CHECKSUM: 474501251b8f9c2831546acb7347c2ddb644556a
+
+COCOAPODS: 1.5.3
