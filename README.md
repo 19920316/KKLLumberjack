@@ -8,7 +8,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 ## Description
-#### 打印到一定数量时，触发日志上报
+* 打印到一定数量时，触发日志上报
 
 #### 到一定时间时，触发日志上报
 
