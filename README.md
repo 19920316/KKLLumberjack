@@ -11,7 +11,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
     ///注册消息处理函数的方法
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     
-    /// crash日志文件上报
+    /*
+    crash日志文件上报
+    UploadLogFileRequest为请求文件，可自行配置,只要实现<KKLUploadPro>协议即可
+    **/
     UploadLogFileRequest *crashLoader = [[UploadLogFileRequest alloc]init];
     [CatchCrash sharedInstance].uploader = crashLoader;
     [[CatchCrash sharedInstance] uploadCrashLogFile];
