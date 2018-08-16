@@ -8,8 +8,9 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 ## Sample usage
- ///注册消息处理函数的方法
+    ///注册消息处理函数的方法
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
     /// crash日志文件上报
     UploadLogFileRequest *crashLoader = [[UploadLogFileRequest alloc]init];
     [CatchCrash sharedInstance].uploader = crashLoader;
@@ -26,11 +27,15 @@ To run the example project, clone the repo, and run `pod install` from the Examp
     
     [KKLLogUploader sharedInstance].uploader = [[UploadLogFileRequest alloc]init];
     
-    /// 根据服务端下发条件配置日志
-    [KKLLog sharedInstance].logLevel = [KKLConfigCenterServer sharedInstance].logDefaultLogLevel;
-    countStrategy.logCount = [KKLConfigCenterServer sharedInstance].logUploadCacheArticles;
-    fileStrategy.kLogFileSize = [KKLConfigCenterServer sharedInstance].logCacheUploadMaxSize;
-    timeStrategy.logUploadInterval = [KKLConfigCenterServer sharedInstance].logUploadPeriod;
+    /*
+    根据服务端下发条件配置日志,可自行配置
+    1 默认日志打印到1000条上报
+    2 默认时间到10分钟上报
+    3 默认日志文件最大为5M
+    **/ 
+    countStrategy.logCount = 1000;//[KKLConfigCenterServer sharedInstance].logUploadCacheArticles;
+    fileStrategy.kLogFileSize = 5M;//[KKLConfigCenterServer sharedInstance].logCacheUploadMaxSize;
+    timeStrategy.logUploadInterval = 600;//[KKLConfigCenterServer sharedInstance].logUploadPeriod;
     
     [[KKLLog sharedInstance] addStrategy:ttyStrategy];
     [[KKLLog sharedInstance] addStrategy:fileStrategy];
