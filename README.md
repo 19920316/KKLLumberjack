@@ -10,11 +10,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Description
 * 打印到一定数量时，触发日志上报
 
-#### 到一定时间时，触发日志上报
+* 到一定时间时，触发日志上报
 
-#### 可自行拼接日志参数
+* 可自行拼接日志参数
 
-#### app启动时，崩溃日志上报
+* app启动时，崩溃日志上报
 ## Sample usage
     ///注册消息处理函数的方法
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
