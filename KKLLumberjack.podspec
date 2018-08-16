@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KKLLumberjack'
-  s.version          = '0.4.4'
+  s.version          = '0.4.6'
   s.summary          = 'A short description of KKLLumberjack.'
 
 # This description is used to generate tags and improve search results.
